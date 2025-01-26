@@ -7,7 +7,7 @@ Examples:
 ```sh
 # opens both editors and exits if one of the editors is closed
 spawny :: gedit :: meld
-spawny :: server :: sleep 1 :::: client
+
 # executes hello and world (the latter with parameter --doit) in parallel
 spawny -:- hello -:- world --doit
 ```
