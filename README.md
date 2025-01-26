@@ -18,7 +18,8 @@ Example:
 ```sh
 # delayed execution of the client after the server started
 # the server is killed when the client or the other way round.
-spawny :: server --some-param --another-param=x :: sleep 2 :::: client -param
+spawny :: server --some-param --another-param=x \
+   :: sleep 2 :::: client -param
 ```
 
 When a chain of commands (or the single command) executed in parallel finishes, the whole
