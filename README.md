@@ -1,5 +1,5 @@
 # spawny
-A simple tool to spawn and manage multiple programs in parallel
+A simple tool to spawn and manage multiple programs in parallel sequences. 
 
 The first argument to spawny is the actual separator.
 
@@ -7,6 +7,7 @@ Examples:
 ```sh
 # opens both editors and exits if one of the editors is closed
 spawny :: gedit :: meld
+spawny :: server :: sleep 1 :::: client
 # executes hello and world (the latter with parameter --doit) in parallel
 spawny -:- hello -:- world --doit
 ```
