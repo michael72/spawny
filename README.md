@@ -23,7 +23,8 @@ spawny :: server --some-param --another-param=x \
 ```
 
 When a chain of commands (or the single command) executed in parallel finishes, the whole
-program is finished.
+program is finished and all remaining process chains terminated. 
+Also wenn spawny gets the signals `SIGTERM` or `SIGINT` (keyboard interrupt) it sends a `SIGTERM`to the running processes. 
           
 
 The separator could be any character except special characters (inside a shell).
